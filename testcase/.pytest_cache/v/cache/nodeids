@@ -1,0 +1,9 @@
+[
+  "wan.py::TestTask::test_lx2",
+  "wan.py::TestTask::test_shetuan",
+  "wan.py::TestTask::test_jinshuju",
+  "wan.py::TestTask::test_lianjie",
+  "test_index.py::test_register",
+  "test_index.py::TestSy::test_register",
+  "test_index.py::TestIndex::test_register"
+]
