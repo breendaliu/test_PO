@@ -2,14 +2,9 @@
 # 这是首页,有立即注册、企业登录功能
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-
 from test_PO.page.base_page import BasePage
 from test_PO.page.login import Login
 from test_PO.page.register import Register
-
-
-
-
 
 class Index(BasePage):
     # 优化3. 把__init__用例放到base_page.py文件中,此处引入base_page.py文件中的类 BasePage
@@ -38,6 +33,7 @@ class Index(BasePage):
         # 点击立即注册，进入注册页面
         return Register(self._driver)
         # 返回Register页面
+
     def goto_login(self):
         self._driver.find_element(By.LINK_TEXT, "企业登录").click()
         return Login(self._driver)
